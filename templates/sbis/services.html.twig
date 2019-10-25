@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<h2>Services</h2>
+
+<section class="service">
+	{% for service in service %}
+		<article id="article">
+			<h3>{{ service.service }}</h3>
+			<div class="metadat">{{ service.description }}</div>
+
+			<div class="content">
+				<img src="{{ service.picture | raw }}" alt="Oups!" />
+				<a href="{{ path('voirplus') }}" class="btn btn-primary">Voir+</a>
+			</div>
+		</article>
+	{% endfor %}
+
+	<br>
+	<br>
+	<br>
+	<br>
+</section>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<h2>Créer un article</h2>
+
+<img src="{{image}}" alt="Oups!!">
+
+<form action="" method="post" style="margin:auto; padding:2%; width:600px; background-color:grey">
+	<label for="service">Nouveau service</label> <input type="text" name="service" placeholder="Nom"> <br><br>
+
+	<label for="description">Donnez la description</label> <input type="text" name="description" placeholder="Description"> <br><br>
+	
+	<label for="picture">Donnez la picture</label> <input type="image" name="picture"> <br><br>
+
+	<input type="submit" value="Créer" class="primary">
+</form>
+
+{% endblock %}
